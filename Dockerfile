@@ -1,7 +1,9 @@
-FROM qmkfm/base_container
+FROM qmkfm/qmk_firmware
 
-VOLUME /qmk_firmware
-WORKDIR /qmk_firmware
+RUN mkdir /output
+
 COPY . .
 
-CMD make all:default
+WORKDIR /qmk_firmware
+
+ENTRYPOINT [ "qmk", "compile" ]
