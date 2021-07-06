@@ -13,56 +13,310 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 #include QMK_KEYBOARD_H
+
+enum custom_keycodes {
+    KEY_0 = SAFE_RANGE,
+    KEY_1,
+    KEY_2,
+    KEY_3,
+    KEY_4,
+    KEY_5,
+    KEY_6,
+    KEY_7,
+    KEY_8,
+    KEY_9,
+    KEY_10,
+    KEY_11,
+    KEY_12,
+    KEY_13,
+    KEY_14,
+    KEY_15
+};
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+    case KEY_0:
+        if (record->event.pressed) {
+            // when keycode KEY_0 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P0);
+        } else {
+            // when keycode KEY_0 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P0);
+        }
+        break;
+    case KEY_1:
+        if (record->event.pressed) {
+            // when keycode KEY_1 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P1);
+        } else {
+            // when keycode KEY_1 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P1);
+        }
+        break;
+    case KEY_2:
+        if (record->event.pressed) {
+            // when keycode KEY_2 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P2);
+        } else {
+            // when keycode KEY_2 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P2);
+        }
+        break;
+    case KEY_3:
+        if (record->event.pressed) {
+            // when keycode KEY_3 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P3);
+        } else {
+            // when keycode KEY_3 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P3);
+        }
+        break;
+    case KEY_4:
+        if (record->event.pressed) {
+            // when keycode KEY_4 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P4);
+        } else {
+            // when keycode KEY_4 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P4);
+        }
+        break;
+    case KEY_5:
+        if (record->event.pressed) {
+            // when keycode KEY_5 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P5);
+        } else {
+            // when keycode KEY_5 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P5);
+        }
+        break;
+    case KEY_6:
+        if (record->event.pressed) {
+            // when keycode KEY_6 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P6);
+        } else {
+            // when keycode KEY_6 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P6);
+        }
+        break;
+    case KEY_7:
+        if (record->event.pressed) {
+            // when keycode KEY_7 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P7);
+        } else {
+            // when keycode KEY_7 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P7);
+        }
+        break;
+    case KEY_8:
+        if (record->event.pressed) {
+            // when keycode KEY_8 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P8);
+        } else {
+            // when keycode KEY_8 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P8);
+        }
+        break;
+    case KEY_9:
+        if (record->event.pressed) {
+            // when keycode KEY_9 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_P9);
+        } else {
+            // when keycode KEY_9 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_P9);
+        }
+        break;
+    case KEY_10:
+        if (record->event.pressed) {
+            // when keycode KEY_10 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_LSFT);
+            register_code(KC_P0);
+        } else {
+            // when keycode KEY_10 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LSFT);
+            unregister_code(KC_P0);
+        }
+        break;
+    case KEY_11:
+        if (record->event.pressed) {
+            // when keycode KEY_11 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_LSFT);
+            register_code(KC_P1);
+        } else {
+            // when keycode KEY_11 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LSFT);
+            unregister_code(KC_P1);
+        }
+        break;
+    case KEY_12:
+        if (record->event.pressed) {
+            // when keycode KEY_12 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_LSFT);
+            register_code(KC_P2);
+        } else {
+            // when keycode KEY_12 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LSFT);
+            unregister_code(KC_P2);
+        }
+        break;
+    case KEY_13:
+        if (record->event.pressed) {
+            // when keycode KEY_13 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_LSFT);
+            register_code(KC_P3);
+        } else {
+            // when keycode KEY_13 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LSFT);
+            unregister_code(KC_P3);
+        }
+        break;
+    case KEY_14:
+        if (record->event.pressed) {
+            // when keycode KEY_14 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_LSFT);
+            register_code(KC_P4);
+        } else {
+            // when keycode KEY_14 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LSFT);
+            unregister_code(KC_P4);
+        }
+        break;
+    case KEY_15:
+        if (record->event.pressed) {
+            // when keycode KEY_15 is pressed
+            register_code(KC_LCTL);
+            register_code(KC_LALT);
+            register_code(KC_LSFT);
+            register_code(KC_P5);
+        } else {
+            // when keycode KEY_15 is released
+            unregister_code(KC_LCTL);
+            unregister_code(KC_LALT);
+            unregister_code(KC_LSFT);
+            unregister_code(KC_P5);
+        }
+        break;
+    }
+    return true;
+};
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /*
             BASE LAYER
     /-----------------------------------------------------`
-    |             |    7    |    8    |    9    |  Bkspc  |
+    |             |  KEY_12 |  KEY_1  |  KEY_14 |  KEY_15 |
     |             |---------|---------|---------|---------|
-    |             |    4    |    5    |    6    |   Esc   |
+    |             |  KEY_8  |  KEY_9  |  KEY_10 |  KEY_11 |
     |             |---------|---------|---------|---------|
-    |             |    1    |    2    |    3    |   Tab   |
+    |             |  KEY_4  |  KEY_5  |  KEY_6  |  KEY_7  |
     |-------------|---------|---------|---------|---------|
-    | Left mouse  |  TT(1)  |    0    |    .    |  Enter  |
+    |    TO(1)    |  KEY_0  |  KEY_1  |  KEY_2  |  KEY_3  |
     \-----------------------------------------------------'
     */
     [0] = LAYOUT(
-                    KC_7,      KC_8,    KC_9,             KC_BSPC,
-                    KC_4,      KC_5,    KC_6,             KC_ESC,
-                    KC_1,      KC_2,    KC_3,             KC_TAB,
-        KC_BTN1,    TT(1),     KC_0,    LSFT_T(KC_DOT),   KC_ENTER
+                     KEY_12,    KEY_13,   KEY_14,   KEY_15,
+                     KEY_8,     KEY_9,    KEY_10,   KEY_11,
+                     KEY_4,     KEY_5,    KEY_6,    KEY_7,
+        TO(1),       KEY_0,     KEY_1,    KEY_2,    KEY_3
     ),
     /*
             SUB LAYER
     /-----------------------------------------------------`
-    |             |         |         |         |  Reset  |
+    |             |         |         |         |         |
     |             |---------|---------|---------|---------|
-    |             |         |         |         |    +    |
+    |             |         |         |         |         |
     |             |---------|---------|---------|---------|
-    |             |         |         |         |    -    |
+    |             |         |         |         |         |
     |-------------|---------|---------|---------|---------|
-    |    LOCK     |         |         |         |    =    |
+    |    TO(2)    |   KC_1  |         |         |         |
     \-----------------------------------------------------'
     */
     [1] = LAYOUT(
-                    _______,     _______,     _______,      RESET,
-                    _______,     _______,     _______,      KC_KP_PLUS,
-                    _______,     _______,     _______,      KC_KP_MINUS,
-        KC_LOCK,    _______,     _______,     _______,      KC_EQL
+                    _______,     _______,     _______,      _______,
+                    _______,     _______,     _______,      _______,
+                    _______,     _______,     _______,      _______,
+        TO(2),    KC_1,     _______,     _______,      _______
+    ),
+    /*
+            SUB LAYER
+    /-----------------------------------------------------`
+    |             |         |         |         |         |
+    |             |---------|---------|---------|---------|
+    |             |         |         |         |         |
+    |             |---------|---------|---------|---------|
+    |             |         |         |         |         |
+    |-------------|---------|---------|---------|---------|
+    |    TO(0)    |   KC_2  |         |         |         |
+    \-----------------------------------------------------'
+    */
+    [2] = LAYOUT(
+                    _______,     _______,     _______,      _______,
+                    _______,     _______,     _______,      _______,
+                    _______,     _______,     _______,      _______,
+        TO(0),    KC_2,     _______,     _______,      _______
     ),
 };
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    // If console is enabled, it will print the matrix position and status of each key pressed
-/*
-#ifdef CONSOLE_ENABLE
-    uprintf("KL: kc: %u, col: %u, row: %u, pressed: %u\n", keycode, record->event.key.col, record->event.key.row, record->event.pressed);
-#endif
-*/
-    return true;
-}
 
 void keyboard_post_init_user(void) {
     // Customise these values to desired behaviour
@@ -95,9 +349,9 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
             case 0:
                 // main layer - move mouse right (CW) and left (CCW)
                 if (clockwise) {
-                    tap_code(KC_MS_R);
+                    tap_code(KC_BRIU);
                 } else {
-                    tap_code(KC_MS_L);
+                    tap_code(KC_BRID);
                 }
                 break;
 
